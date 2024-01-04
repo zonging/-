@@ -1,0 +1,152 @@
+<!-- resources.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习资源</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        #resourceCarousel {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #resourceContainer {
+            display: flex;
+            animation: scrollResources 15s linear infinite;
+        }
+
+        #resourceContainer img {
+            width: 150px;
+            margin: 0 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        #resourceContainer img:hover {
+            transform: scale(1.1); /* 放大图片效果 */
+        }
+
+        @keyframes scrollResources {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h2 {
+            color: #3498db;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>学习资源</h1>
+
+    <!-- 图书滚动播放 -->
+    <div id="resourceCarousel">
+        <div id="resourceContainer">
+            <img src="images/resource1.jpg" alt="Resource 1">
+            <img src="images/resource2.jpg" alt="Resource 2">
+            <img src="images/resource3.jpg" alt="Resource 3">
+            <img src="images/resource4.jpg" alt="Resource 4">
+            <img src="images/resource5.jpg" alt="Resource 5">
+            <img src="images/resource6.jpg" alt="Resource 6">
+            <!-- 可以继续添加更多资源的图片 -->
+        </div>
+    </div>
+
+    <section>
+        <h2>教材</h2>
+        <ul>
+            <li>《计算机科学导论》 - 作者：张三</li>
+            <li>《数据结构与算法分析》 - 作者：李四</li>
+            <li>《软件工程导论》 - 作者：王五</li>
+            <!-- 可以继续添加更多教材 -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>参考书籍</h2>
+        <ul>
+            <li>《深入理解计算机系统》 - 作者：钱三</li>
+            <li>《设计模式：可复用面向对象软件的基础》 - 作者：孙二</li>
+            <li>《网络安全导论》 - 作者：李一</li>
+            <!-- 可以继续添加更多参考书籍 -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>在线资源</h2>
+        <p>除了书籍外，我们还提供了一些在线资源，包括视频讲座、教学文档和实例代码。学生可以通过我们的在线平台随时访问这些资源。</p>
+        <ul>
+            <li><a href="https://www.51zxw.net/">视频讲座</a></li>
+			<p>                                                                   </p>
+			<p>                                                                   </p>
+            <li><a href="http://www.hdxy.edu.cn/">教学文档</a></li>
+			<p>                                                                   </p>
+			<p>                                                                   </p>
+            <li><a href="https://github.com/">实例代码</a></li>
+            <!-- 可以继续添加更多在线资源链接 -->
+        </ul>
+    </section>
+
+    <a href="index.html">返回首页</a>
+
+</body>
+</html>
